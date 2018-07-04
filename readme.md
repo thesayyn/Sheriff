@@ -1,4 +1,4 @@
-# ![logo](Sheriff/sheriff.ico) Sheriff ![language](https://img.shields.io/badge/language-csharp-orange.svg?longCache=true)
+# ![logo](Sheriff/sheriff.ico =35x35) Sheriff ![language](https://img.shields.io/badge/language-csharp-orange.svg?longCache=true)
 Silkroad server filter project 
 
 
