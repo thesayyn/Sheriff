@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings  
+  xmlns="https://thesayyn.net/schemas/Sheriff.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Servers>
+    
+    <Server ID="0" Description="Sheriff's GatewayServer"  Class="Sheriff.Emulators.Gateway.GatewayServer">
+       <Bind IP="192.168.1.10" Port="584"></Bind>
+       <Bind IP="192.168.1.10" Port="552"></Bind>
+
+      <Divisions FarmID="20" FarmName="SRO_TR 0">
+        
+        
+        <Division Name="Pearl Harbor" Capacity="3000" ShardID="64">
+           <Reditect ID="1"></Reditect>
+        </Division>
+        
+        <Division Name="Çanakkale" Capacity="3000" ShardID="64">
+           <Reditect ID="1"></Reditect>
+        </Division>
+        
+
+      </Divisions>
+
+      <DownloadServer>
+        <Reditect ID="2"></Reditect>
+      </DownloadServer>
+
+
+    </Server>
+
+    <Server ID="1" Description="Çanakkale's AgentServer" Class="Sheriff.Emulators.Agent.AgentServer">
+        <Bind IP="192.168.1.10" Port="1851"></Bind>
+        <Bind IP="192.168.1.10" Port="5858"></Bind>
+    </Server>
+
+    
+    <Server ID="2" Description="Sheriff's Download Server" Class="Sheriff.Emulators.Download.DownloadServer">
+      <Bind IP="192.168.1.10" Port="20004"></Bind>
+    </Server>
+
+    
+    <Server ID="3" Description="Sheriff's Sniffer Server" Class="Sheriff.Emulators.Sniffer.SnifferServer">
+      <Bind IP="192.168.1.10" Port="4000"></Bind>
+    </Server>
+
+    <Server ID="4" Description="Sheriff's Api Server" Class="Sheriff.Http.ApiServer">
+      <Bind IP="127.0.0.1" Port="154"></Bind>
+    </Server>
+ 
+  </Servers>
+
+  <Security>
+      
+     <Access ServerID="4">
+        <Token ExpiresIn="25145156156">b4b8daf4b8ea9d39568719e1e320076f</Token>
+     </Access>
+    
+  </Security>
+
+
+</Settings>
